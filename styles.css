@@ -1,0 +1,395 @@
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+:root{
+    --blue: hsla(205, 99%, 53%, 1);
+    --dark-blue: hsla(223, 25%, 22%, 1);
+    --light: hsla(206, 100%, 97%, 1);
+    --gray: hsla(206, 3%, 45%, 1);
+}
+
+body {
+     font-family: 'Inter', sans-serif; 
+    -webkit-font-smoothing: antialiased;
+}
+
+.container{
+    /* margin-right: 8.43rem;
+    margin-left: 8.43rem; */
+
+    max-width: 1120px;
+    margin: auto;
+}
+
+#header{
+    /* width: 100%;
+    position: fixed;
+    color: #6E7275;
+    height: 4.37rem;
+    z-index: 100; */
+    
+}
+
+nav {
+    /* width: 100%; */
+    height: 4.37rem;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    color: #6E7275;
+    
+    font-style: normal;
+    font-weight: 500;
+    font-size: 1.12rem;
+    line-height: 1.37rem;
+
+}
+
+a {
+    text-decoration: none;
+}
+
+ul {
+    list-style: none;
+    display: flex;
+    gap: 4.12rem;
+}
+
+h1 {
+    font-family: Sora;
+    font-style: normal;
+    font-weight: 600;
+    font-size: 3rem;
+    line-height: 3.75rem;
+    align-items: center;
+
+    color: #293145;
+
+    margin-bottom: 3.12rem;
+}
+
+.home {
+    background: #EFF8FF;
+}
+
+.conteudo{
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    /* margin-bottom: 12rem; */
+}
+
+.content-home{
+    width: 35.87rem;
+}
+
+.button-register {
+    background-color: var(--blue);
+    padding: 1rem 2.25rem;
+    box-shadow: 0.063rem 0.188rem 0.25rem rgba(19, 125, 224, 0.5);
+    border-radius: 3.12rem;
+
+    font-family: Inter;
+    font-style: normal;
+    font-weight: 600;
+    font-size: 1.25rem;
+    line-height: 1.5rem;
+
+    color: #FFFFFF;
+}
+
+.button-register:hover {
+    background-color: transparent;
+    color: var(--dark-blue);
+    border: 0.06rem solid var(--dark-blue);
+
+}
+
+.functionalities h2 {
+    font-family: Sora;
+    font-style: normal;
+    font-weight: 600;
+    font-size: 2.5rem;
+    line-height: 3.12rem;
+    text-align: center;
+    color: var(--dark-blue);
+
+    margin-top: 3.5rem;
+    margin-bottom: 5.23rem;
+}
+
+.display-functionalities {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    gap: 10.12rem;
+    
+}
+
+.icon-functionalities {
+    width: 13.12rem;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    text-align: center;
+}
+
+.icon-functionalities h3 {
+    font-family: Sora;
+    font-style: normal;
+    font-weight: 600;
+    font-size: 1.12rem;
+    line-height: 1.43rem;
+    color: var(--dark-blue);
+
+    margin-top: 2.57rem;
+    margin-bottom: 1rem;
+}
+
+.icon-functionalities p {
+    font-family: Inter;
+    font-style: normal;
+    font-weight: normal;
+    font-size: 1rem;
+    line-height: 1.62rem;
+
+    text-align: center;
+    color: var(--gray);
+
+    margin-bottom: 6.81rem;
+}
+
+.section-app {
+    background-color: var(--light);
+    height: 29.68rem;
+}
+
+.display-app {
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    gap: 10.75rem;
+    padding-top: 3.98rem;
+    padding-bottom: 5.23rem;
+}
+
+.app-content h2 {
+    font-family: Sora;
+    font-style: normal;
+    font-weight: 600;
+    font-size: 2rem;
+    line-height: 2.5rem;
+    color: var(--dark-blue);
+
+    margin-bottom: 1.5rem;
+}
+
+.app-content p {
+    font-family: Inter;
+    font-style: normal;
+    font-weight: normal;
+    font-size: 1rem;
+    line-height: 1.62rem;
+    color: var(--gray);
+
+    margin-bottom: 2.24rem;
+}
+
+.icon-app {
+    display: flex;
+    gap: 1.77rem;
+}
+
+.plans h2 {
+    font-family: Sora;
+    font-style: normal;
+    font-weight: 600;
+    font-size: 2.5rem;
+    line-height: 3.12rem;
+    color: var(--dark-blue);
+    text-align: center;
+
+    margin-top: 3.12rem;
+    margin-bottom: 1rem;
+}
+
+.plans p {
+    font-family: Roboto;
+    font-style: normal;
+    font-weight: normal;
+    font-size: 1.12rem;
+    line-height: 1.56rem;
+
+    text-align: center;
+    color: var(--gray); 
+}
+
+.plans-text {
+    margin-bottom: 6rem;
+}
+
+.cards {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    gap: 1.87rem;
+}
+
+.card {
+    width: 23.12rem;
+    /* height: 29.43rem; */
+    border-radius: 0.5rem;
+
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    flex-direction: column;
+
+    padding: 0 2.18rem;
+    margin-bottom: 8.31rem;
+    padding-bottom: 4rem;
+}
+
+.card h3 {
+    font-family: Sora;
+    font-style: normal;
+    font-weight: 600;
+    font-size: 1.5rem;
+    line-height: 1.87rem;
+
+    color: var(--dark-blue);
+}
+
+.card-bronze {
+    background: var(--light); 
+    color: var(--dark-blue);
+}
+
+.card-bronze h3 {
+    margin-top: 3.5rem;
+    margin-bottom: 3.68rem;
+}
+
+.card-bronze .price{
+    color: var(--dark-blue);
+}
+
+.card .price {
+    font-family: Roboto;
+    font-style: normal;
+    font-weight: bold;
+    font-size: 3.12rem;
+    line-height: 3.68rem;
+
+    /* color: var(--dark-blue); */
+    margin-bottom: 3.12rem;
+}
+
+.card .price-small {
+    font-size: 1.25rem;
+    line-height: 1.43rem;
+    float: left;
+    margin-top: 0.37rem;
+}
+
+.card .price-mes {
+    font-family: Roboto;
+    font-style: normal;
+    font-weight: bold;
+    font-size: 1.62rem;
+    line-height: 1.87rem;
+}
+
+.card a {
+    margin-top: 3.62rem;
+    /* margin-bottom: 4rem; */
+
+    font-family: Nunito;
+    font-style: normal;
+    font-weight: bold;
+    font-size: 1.25rem;
+    line-height: 1.68rem;
+    color: white;
+
+    display: flex;
+    align-items: center;
+    justify-content: center;
+
+    width: 14.37rem;
+    height: 2.68rem;
+    background: var(--blue);
+    box-shadow: 0.06rem 0.18rem 0.25rem rgba(19, 125, 224, 0.5);
+    border-radius: 3.12rem;
+}
+
+.card-silver {
+    background-color: var(--dark-blue);
+}
+
+.card-silver .price-silver {
+    color: #FFFFFF;
+}
+
+.card-silver p {
+    color: #DBDBDB;
+}
+
+.card-silver h3 {
+    margin-top: 2.01rem;
+    margin-bottom: 0.85rem;
+    color: #FFFFFF;
+}
+
+.card-silver span {
+    font-family: Inter;
+    font-style: normal;
+    font-weight: 600;
+    font-size: 0.87rem;
+    line-height: 1.06rem;
+
+    display: flex;
+    align-items: center;
+    letter-spacing: 0.2em;
+
+    color: #FFFFFF;
+
+    width: 164px;
+    height: 27px;
+    left: 638px;
+    top: 1996px;
+
+    background: var(--blue);
+    border-radius: 15px;
+
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    margin-bottom: 2rem;
+    margin-top: 0.60rem; 
+}
+
+.contact {
+    background-image: url(assets/image-contact.svg);
+    background-size: 100%;
+}
+
+.contact h2 {
+    font-family: Sora;
+    font-style: normal;
+    font-weight: 600;
+    font-size: 2.5;
+    line-height: 3.12rem;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+
+    color: #FFFFFF;
+}
+
+.contact-content p {
+    
+}
+
