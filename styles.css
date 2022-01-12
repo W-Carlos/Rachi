@@ -373,15 +373,63 @@ h1 {
 
 .contact {
     background-image: url(assets/image-contact.svg);
-    background-size: 100%;
+    background-size: cover;
+    /* background-size: 100%; */
+    background-repeat: no-repeat;
+    background-position: 50% 0;
+    /* opacity: 0.6; */
+
 }
 
 .contact h2 {
     font-family: Sora;
     font-style: normal;
     font-weight: 600;
-    font-size: 2.5;
+    font-size: 2.5rem;
     line-height: 3.12rem;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+
+    color: #FFFFFF;
+    padding-top: 3.12rem;
+}
+
+
+.contact-content p {
+    font-family: Roboto;
+    font-style: normal;
+    font-weight: normal;
+    font-size: 1.12rem;
+    line-height: 1.56rem;
+
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    text-align: center;
+    color: #DBDBDB;
+    margin-top: 1rem;
+}
+
+.contact-content input {
+    width: 18.75rem;
+    height: 2rem;
+    background: transparent;
+    outline: none;
+    margin-top: 5.81rem;
+    margin-right: 2.5rem;
+
+    border-top: none;
+    border-left: none;
+    border-right: none;
+    border-bottom: 0.063rem solid #FFFFFF;
+
+    font-family: Inter;
+    font-style: normal;
+    font-weight: 500;
+    font-size: 1.12rem;
+    line-height: 1.37rem;
+
     display: flex;
     align-items: center;
     justify-content: center;
@@ -389,7 +437,69 @@ h1 {
     color: #FFFFFF;
 }
 
-.contact-content p {
+.contact-content input::placeholder {
+    font-family: Inter;
+    font-style: normal;
+    font-weight: 500;
+    font-size: 1.12rem;
+    line-height: 1.37rem;
+
+    display: flex;
+    align-items: center;
+
+    color: #FFFFFF;
+}
+
+.contact-content button {
+    width: 7.37rem;
+    height: 2.37rem;
+    outline: none;
+    border: none;
+
+    display: flex;
+    align-items: center;
+    justify-content: center;
+
+    background: var(--blue);
+    border-radius: 3.12rem;
+
+    font-family: Inter;
+    font-style: normal;
+    font-weight: 500;
+    font-size: 1.12rem;
+    line-height: 1.37rem;
+
+    display: inline-block;
+
+    display: flex;
+    align-items: center;
+
+    cursor: pointer;
+   
+
+    color: #FFFFFF;
+
+    margin-top: 5.81rem;
     
+}
+
+.contact-content .envia-email {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    padding-bottom: 5.31rem;
+}
+
+footer p {
+    text-align: center;
+    font-family: Sora;
+    font-style: normal;
+    font-weight: normal;
+    font-size: 1.25rem;
+    line-height: 1.56rem;
+
+    color: var(--dark-blue);
+
+    margin: 2.56rem 0;
 }
 
