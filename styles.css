@@ -16,6 +16,19 @@ body {
     -webkit-font-smoothing: antialiased;
 }
 
+#header {
+    position: fixed;
+
+    top: 0;
+    left: 0;
+    z-index: 100;
+    width: 100%;
+    background-color: #FFFFFF;
+    margin: 0;
+
+    box-shadow: 2px -9px 18px rgba(54, 50, 50, 0.514);
+}
+
 .container{
     /* margin-right: 8.43rem;
     margin-left: 8.43rem; */
@@ -70,6 +83,32 @@ h1 {
     color: #293145;
 
     margin-bottom: 3.12rem;
+}
+
+nav ul li a {
+    transition: color 0.2s;
+    position: relative;
+}
+
+nav ul li a:hover{
+    color: var(--blue);
+}
+
+nav ul li a::after {
+    content: "";
+    width: 0%;
+    height: 2px;
+    background: var(--blue);
+
+    position: absolute;
+    left: 0;
+    bottom: -1.5rem;
+
+    transition: width 0.2s;
+}
+
+nav ul li a:hover::after{
+    width: 100%;
 }
 
 .home {
