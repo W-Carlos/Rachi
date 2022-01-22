@@ -16,6 +16,21 @@ body {
     -webkit-font-smoothing: antialiased;
 }
 
+/*Scrollbar*/
+body::-webkit-scrollbar {
+    width: 13px;               /* width of the entire scrollbar */
+  }
+  
+  body::-webkit-scrollbar-track {
+    background: rgb(222, 231, 238);        /* color of the tracking area */
+  }
+  
+  body::-webkit-scrollbar-thumb {
+    background-color: var(--blue);    /* color of the scroll thumb */
+    border-radius: 20px;       /* roundness of the scroll thumb */
+    /* border: 3px solid orange; */  /* creates padding around scroll thumb */
+  }
+
 html {
     scroll-behavior: smooth;
     /* scroll-padding-top: 80px; */
@@ -186,6 +201,7 @@ main {
     flex-direction: column;
     align-items: center;
     text-align: center;
+
 }
 
 
