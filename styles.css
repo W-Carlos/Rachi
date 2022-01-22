@@ -18,19 +18,24 @@ body {
 
 html {
     scroll-behavior: smooth;
+    /* scroll-padding-top: 80px; */
 }
 
 #header {
+    display: flex;
     position: fixed;
 
     top: 0;
     left: 0;
-    z-index: 100;
+    z-index: 99;
     width: 100%;
     background-color: #FFFFFF;
-    margin: 0;
+   /*  margin: 0; */
 
     box-shadow: 2px -9px 18px rgba(54, 50, 50, 0.514);
+    /* margin-bottom: 2rem; */
+
+ 
 }
 
 .container{
@@ -41,17 +46,16 @@ html {
     margin: auto;
 }
 
-/* #header {
-    width: 100%;
-    position: fixed;
-    color: #6E7275;
-    height: 4.37rem;
-    z-index: 100; 
-    
-} */
+/*Faz com que o header respeite as âncoras*/
+:target::before {
+    content: "";
+    display: block;
+    height: 60px; 
+    margin: -60px 0 0; 
+}
 
 nav {
-    /* width: 100%; */
+    width: 100%;
     height: 4.37rem;
     display: flex;
     justify-content: space-between;
@@ -62,6 +66,8 @@ nav {
     font-weight: 500;
     font-size: 1.12rem;
     line-height: 1.37rem;
+
+    
 }
 
 a {
@@ -114,6 +120,10 @@ h1 {
     margin-bottom: 3.12rem;
 }
 
+main {
+    margin-top: 4.37rem;
+}
+
 .home {
     background: #EFF8FF;
 }
@@ -123,7 +133,7 @@ h1 {
     justify-content: space-between;
     align-items: center;
     /* margin-bottom: 12rem; */
-    padding-top: 7.5rem;
+    /* padding-top: 7.5rem; */
 }
 
 .content-home{
@@ -146,12 +156,9 @@ h1 {
 }
 
 .button-register:hover {
-    background-color: transparent;
-    color: var(--dark-blue);
-    border: 0.06rem solid var(--dark-blue);
+    background-color: #0c6eb4;
 
 }
-
 .functionalities h2 {
     font-family: Sora;
     font-style: normal;
@@ -181,9 +188,6 @@ h1 {
     text-align: center;
 }
 
-.icon-functionalities:hover {
-    
-}
 
 .icon-functionalities h3 {
     font-family: Sora;
@@ -373,6 +377,10 @@ h1 {
     border-radius: 3.12rem;
 }
 
+.card a:hover{
+    background-color: #0c6eb4;
+}
+
 .card-silver {
     background-color: var(--dark-blue);
 }
@@ -533,6 +541,11 @@ h1 {
     margin-top: 5.81rem;
     
 }
+
+.contact-content button:hover {
+    background-color: #0c6eb4;
+}
+
 
 .contact-content .envia-email {
     display: flex;
