@@ -50,7 +50,6 @@ html {
     box-shadow: 2px -9px 18px rgba(54, 50, 50, 0.514);
     /* margin-bottom: 2rem; */
 
- 
 }
 
 .container{
@@ -62,12 +61,52 @@ html {
 }
 
 /*Faz com que o header respeite as âncoras*/
-:target::before {
+/* :target::before {
+    content: "";
+    display: block;
+    height: 60px; 
+    margin: -60px 0 0; 
+} */
+
+#home:target::before {
     content: "";
     display: block;
     height: 60px; 
     margin: -60px 0 0; 
 }
+
+#functionalities:target::before {
+    content: "";
+    display: block;
+    height: 60px; 
+    margin: -60px 0 0; 
+}
+
+/* #app:target::before {
+    content: "";
+    display: block;
+    height: 40px; 
+    margin: 0px 0 0; 
+} */
+
+
+
+#plans:target::before {
+    content: "";
+    display: block;
+    height: 60px; 
+    margin: -60px 0 0; 
+}
+
+/* #app::before { 
+    display: block; 
+    content: ""; 
+    margin: auto;
+    padding-top: -5px;
+    margin-top: -75px; 
+    height: 5px; 
+    visibility: hidden; 
+} */
 
 nav {
     width: 100%;
@@ -81,8 +120,6 @@ nav {
     font-weight: 500;
     font-size: 1.12rem;
     line-height: 1.37rem;
-
-    
 }
 
 a {
@@ -232,7 +269,8 @@ main {
 
 .section-app {
     background-color: var(--light);
-    height: 29.68rem;
+    /* height: 29.68rem; */
+    height: auto;
 }
 
 .display-app {
@@ -240,8 +278,8 @@ main {
     align-items: center;
     justify-content: space-between;
     gap: 10.75rem;
-    padding-top: 3.98rem;
-    padding-bottom: 5.23rem;
+    padding-top: 5.37rem;
+    padding-bottom: 3.31rem;
 }
 
 .app-content h2 {
