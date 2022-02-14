@@ -36,6 +36,8 @@ html {
     /* scroll-padding-top: 80px; */
 }
 
+/* =============== HEADER ===============*/
+
 #header {
     display: flex;
     position: fixed;
@@ -68,6 +70,8 @@ html {
     margin: -60px 0 0; 
 } */
 
+/* =============== cONFIGURAÇÕES DO HEADER ===============*/
+
 #home:target::before {
     content: "";
     display: block;
@@ -81,15 +85,6 @@ html {
     height: 60px; 
     margin: -60px 0 0; 
 }
-
-/* #app:target::before {
-    content: "";
-    display: block;
-    height: 40px; 
-    margin: 0px 0 0; 
-} */
-
-
 
 #plans:target::before {
     content: "";
@@ -107,6 +102,8 @@ html {
     height: 5px; 
     visibility: hidden; 
 } */
+
+/* =============== NAV ===============*/
 
 nav {
     width: 100%;
@@ -158,6 +155,8 @@ nav ul li a::after {
 nav ul li a:hover::after{
     width: 100%;
 }
+
+/* =============== HOME ===============*/
 
 h1 {
     font-family: Sora;
@@ -211,6 +210,9 @@ main {
     background-color: #0c6eb4;
 
 }
+
+/* =============== FUNCIONALIDADES ===============*/
+
 .functionalities h2 {
     font-family: Sora;
     font-style: normal;
@@ -267,6 +269,8 @@ main {
     margin-bottom: 6.81rem;
 }
 
+/* =============== APP ===============*/
+
 .section-app {
     background-color: var(--light);
     /* height: 29.68rem; */
@@ -308,6 +312,8 @@ main {
     display: flex;
     gap: 1.77rem;
 }
+
+/* =============== PLANOS ===============*/
 
 .plans h2 {
     font-family: Sora;
@@ -493,6 +499,7 @@ main {
     background-color: rgba(41, 49, 69, 0.7);
 }
 
+/* =============== CONTATO ===============*/
 
 .contact h2 {
     font-family: Sora;
@@ -608,6 +615,8 @@ main {
     padding-bottom: 5.31rem;
 }
 
+/* =============== FOOTER ===============*/
+
 footer p {
     text-align: center;
     font-family: Sora;
@@ -621,3 +630,24 @@ footer p {
     margin: 2.56rem 0;
 }
 
+/* Responsivo */
+@media (max-width: 1170px){
+    .container{
+        margin-right: 3.43rem;
+        margin-left: 3.43rem;
+    }
+}
+
+@media (max-width: 1000px){
+    nav ul {
+        display: none;
+    }
+
+    .home .conteudo{
+        display: flex;
+        
+        flex-direction: column-reverse;
+        text-align: center;
+    }
+
+}
